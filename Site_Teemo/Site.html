@@ -85,10 +85,10 @@ z-index: 3;
 float:left;
 }
 .botao2{
-float:center;
+float:absolute;
 }
 .botao3{
-float:right;
+float: right;
 }
 }
 pc{
@@ -131,6 +131,7 @@ color: #ffffff;
   font-weight: bold;
 position: absolute;
   left: 50%;
+  right: 50%;
 transform: translate(-50%, -50%);  
 z-index: 3;
 top: 35%;
@@ -143,15 +144,15 @@ top: 35%;
 }
 #myBtn {
   display: none;
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
-  color: white;
+  background-color: transparent;
+  color: transparent;
   cursor: pointer;
   padding: 15px;
   border-radius: 0px;
@@ -237,14 +238,15 @@ Arremessa um cogumelo como armadilha que detonará caso um inimigo pise nela, es
 </video>
 <br/></p>
 <div class="botao2">
-<button onclick="javascript: location.href='https://pjgm0202.github.io/Site_Teemo/Site2.html';"><image height="77" width="113" src= 'https://pjgm0202.github.io/Site_Teemo/titulohistoria.png' style='vertical-align: center; float: center;'/></button>
+<button onclick="javascript: location.href='https://pjgm0202.github.io/Site_Teemo/Site2.html';"><image height="77" width="113" src= 'https://pjgm0202.github.io/Site_Teemo/titulohistoria.png' style='vertical-align: left; float: left;'/></button>
 </div>
 <div class="botao1">
 <button onclick="javascript: location.href='https://pjgm0202.github.io/Site_Teemo/Main.html';"><img height="70" width="70" src= 'https://pjgm0202.github.io/Site_Teemo/setasesquerda.png' style='vertical-align: left; float: left;'/></button><br><br><br><br>
 </div>
 <div class="botao3">
-<button onclick="scrollWin(0, -10000)"><img height="30" width="80" src= 'https://pjgm0202.github.io/Site_Teemo/top-button-png-4.png' style='vertical-align: center; float: center;'/></button>
-</div>
+<br/><br/>
+<button onclick="scrollWin(0, -10000)"><img height="30" width="80" src= 'https://pjgm0202.github.io/Site_Teemo/top-button-png-4.png' style='vertical-align: left; float: left;'/></button>
+<br></div>
 <script>
 function scrollWin(x, y) {
     window.scrollBy(x, y);
