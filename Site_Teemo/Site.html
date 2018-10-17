@@ -171,6 +171,20 @@ top: 35%;
 </style>
 </head>
 <body class="bg-image">
+<script>
+if (!document.cookie){
+setCookie("cookie", "1", 365);
+document.write("<font face='verdana' size='3' style= 'color: white'>Suas Visitas : 1</font>");
+} else {
+var cont = document.cookie;
+var dividindo = cont.split("=");
+//document.write(dividindo[1]);
+var numero = parseInt(dividindo[1]);
+var soma = numero + 1;
+document.write("<font face='verdana' size='3' style= 'color: white'>Suas Visitas : " + soma + "</font>");
+setCookie("cookie", soma, 365);
+}
+</script> 
 <div class="top">
 
 <p><br><br><br/><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -273,18 +287,6 @@ Arremessa um cogumelo como armadilha que detonará caso um inimigo pise nela, es
 <br/>
 <button onclick="scrollWin(0, -10000)"><img height="40" width="40" src= 'https://pjgm0202.github.io/Site_Teemo/top-button.png' style='vertical-align: left; float: left;'/></button><br><br>
 <script>
-if (!document.cookie){
-setCookie("cookie", "1", 365);
-document.write("<font face='verdana' size='3' style= 'color: white'>Suas Visitas : 1</font>");
-} else {
-var cont = document.cookie;
-var dividindo = cont.split("=");
-//document.write(dividindo[1]);
-var numero = parseInt(dividindo[1]);
-var soma = numero + 1;
-document.write("<font face='verdana' size='3' style= 'color: white'>Suas Visitas : " + soma + "</font>");
-setCookie("cookie", soma, 365);
-}
 function scrollWin(x, y) {
     window.scrollBy(x, y);
 }
