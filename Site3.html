@@ -3,17 +3,7 @@
 <meta name="Teemo" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href='https://pjgm0202.github.io/Site_Teemo/icon-teemo.jpg' rel='icon' type='image/x-icon'/>
-<title>Teemo is Watching You!</title>
-    
-<script> 
-function setCookie(nome, valor, dias){ 
-diasms = (new Date()) .getTime() + 1000 * 3600 * 24 * dias; 
-dias = new Date(diasms); 
-expires = dias.toGMTString(); 
-document.cookie = escape(nome) + "=" + escape(valor) + "; expires=" + expires; 
-} 
-</script>
-    
+<title>Teemo is Watching You!</title>  
 <iframe src="https://pjgm0202.github.io/Site_Teemo/devil-teemo.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 </iframe> 
 <style>
@@ -83,20 +73,7 @@ z-index: 3;
 }
 </style>
 </head>
-<body>
-<script>
-if (!document.cookie){
-setCookie("cookie", "1", 365);
-document.write("<font face='verdana' size='4' style= 'color: white'>Suas Visitas : 1</font>");
-} else {
-var cont = document.cookie;
-var dividindo = cont.split("=");
-//document.write(dividindo[1]);
-var numero = parseInt(dividindo[1]);
-var soma = numero + 1;
-document.write("<font face='verdana' size='4' style= 'color: white'>Suas Visitas : " + soma + "</font>");
-setCookie("cookie", soma, 365);
-}
+<body class="bg-image">
 </script> 
 <div class="bg-image"></div>
 <div class="bg-text">

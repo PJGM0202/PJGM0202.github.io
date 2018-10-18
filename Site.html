@@ -1,300 +1,122 @@
-﻿<html lang="pt-br">
-<head>
-<meta name="Teemo" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href='https://pjgm0202.github.io/Site_Teemo/pab0fxmltgv01.jpg' rel='icon' type='image/x-icon'/>
-<title>Teemo Info</title>
-    
-<script> 
-function setCookie(nome, valor, dias){ 
-diasms = (new Date()) .getTime() + 1000 * 3600 * 24 * dias; 
-dias = new Date(diasms); 
-expires = dias.toGMTString(); 
-document.cookie = escape(nome) + "=" + escape(valor) + "; expires=" + expires; 
-} 
-</script>    
-    
-<iframe src="https://pjgm0202.github.io/Site_Teemo/Summoners_Rift.mp3" allow="autoplay" style="display:none" id="iframeAudio" VOLUME="01"OOP="FALSE" repeat="true">
-</iframe> 
-<style>
-h1 { 
-text-shadow:
-    -1px -1px 0 #0080FF,
-    1px -1px 0 #0080FF,
-    -1px 1px 0 #0080FF,
-    1px 1px 0 #0080FF;
-}
-body, html {
-height: 100%; 
-}
+﻿<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://pjgm0202.github.io/Site_Teemo/pab0fxmltgv01.jpg" rel="icon" type="image/x-icon">  <title>Teemo Info</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  </head><body style="background-repeat:no-repeat;background-size:cover;background-position:center;"><iframe src="https://pjgm0202.github.io/Site_Teemo/Summoners_Rift.mp3" allow="autoplay" style="display:none" id="iframeAudio" volume="01" oop="FALSE" repeat="true">
+</iframe>  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-body { 
-background-image: url("https://pjgm0202.github.io/Site_Teemo/Teemo_18.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100%;
-    bottom: 0;
-    color: black;
-    left: 0;
-    overflow: auto;
-    padding: 3em;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-  height: 100%;
-  margin: 0;
-}
 
-button {
-    position: fixed;
-}
-* {
-  box-sizing: border-box;
-}
 
-.bg-image {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- 
-  height: 100%; 
-}
-.bg-text {
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.4);
-  color: #FFD700;
-  font-weight: bold;
-  border: 3px solid orange;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 1px;
-  text-align: center;
-}
-.text{
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.8);
-  color: white;
-  font-weight: bold;
-border: 3px solid orange;
-position: absolute;
-top: 100%;
-  left: 50%;
- right: 50%;
-transform: translate(-50%, -50%);  
-z-index: 3;
-  width: 90%;
-  padding: 40px;
-  text-align: center;
-}
-.botao1{
-float:left;
-}
-.botao2{
-float:absolute;
-}
-.botao3{
-float: right;
-}
-}
-pc{
-background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 10);
-  color: white;
-  font-weight: bold;
-  border: 2px solid white;
-  padding: 10px;
-  text-align: center;
-}
-.pt {
-  color: #FFD700;
-  font-weight: bold;
-  position: absolute;
-  top: 59%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
-    .back-to-top {
- 
-background: none;
-margin: 0;
-position: fixed;
-bottom: 0;
-right: 100%;
-width: 70px;
-height: 70px;
-z-index: 100;
-display: none;
-text-decoration: none;
-color: #ffffff;
-}
-.top{
-  color: white;
-  font-weight: bold;
-position: absolute;
-  left: 50%;
-  right: 50%;
-transform: translate(-50%, -50%);  
-z-index: 3;
-top: 35%;
-  width: 100%;
-  padding: 40px;
-  text-align: center;
-}
-#myBtn {
-  display: none;
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: transparent;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 0px;
-}
-#myBtn:hover {
-  background-color: transparent;
-}
-</style>
-</head>
-<body class="bg-image">
-<script>
-if (!document.cookie){
-setCookie("cookie", "1", 365);
-document.write("<font face='verdana' size='4' style= 'color: blue'>Suas Visitas : 1</font>");
-} else {
-var cont = document.cookie;
-var dividindo = cont.split("=");
-//document.write(dividindo[1]);
-var numero = parseInt(dividindo[1]);
-var soma = numero + 1;
-document.write("<font face='verdana' size='4' style= 'color: blue'>Suas Visitas : " + soma + "</font>");
-setCookie("cookie", soma, 365);
-}
-</script> 
-<div class="top">
-
-<p><br><br><br/><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br></p>
-
-<div class="bg-image"></div>
+    <div>
+        <div class="d-inline header-dark">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 jello animated"><style>body { background-image: url("https://pjgm0202.github.io/Site_Teemo/Teemo_18.png"); background-repeat: no-repeat; background-attachment: fixed; background-size:100%; bottom: 0; color: black; left: 0; overflow: auto; padding: 3em; position: absolute; right: 0; text-align: center; top: 0; height: 100%; margin: 0;
+}</style><div class="bg-image">
 <div class="bg-text">
-<div style="text-align:center; float:center;"><h1 style="font-size:50px" align="absolute"><img height="160" width="600"  src= 'https://pjgm0202.github.io/Site_Teemo/logo.png'></h1>
-</div></div>
-<div class="text">
-
-<br/><pc style="font-size:30px">Habilidades</pc>
-<p style="font-size:28px" align="justify"><b><u>Técnicas de Guerrilha</u></b><br/><br/><img align="justify" src="https://pjgm0202.github.io/Site_Teemo/Teemo_P.png" alt="https://pjgm0202.github.io/Site_Teemo/Teemo_P.png" height="55" width="55"></p>
-<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br/></i></u></b></p>
-<p style="font-size:17px" align="justify">Se Teemo permanecer imóvel e não realizar qualquer ação por um curto período de tempo, ele fica Invisível por tempo indefinido. Caso esteja em um arbusto, Teemo pode manter sua Invisibilidade enquanto se move. Ao quebrar a Invisibilidade, Teemo ativa o Elemento Surpresa, aumentando a própria Velocidade de Ataque por 3 segundos.<br/> 
-<br/>
-<video controls poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_P1.jpg" height="200" width="290">
+<div style="font-size:50px" align="absolute"><img src="https://pjgm0202.github.io/Site_Teemo/logo.png" width="600" height="160">
+</div></div></div>
+<button class="btn btn-link active btn-block btn-sm" type="button" data-bs-hover-animate="bounce"></button>
+                    <div class="btn-group" role="group" data-bs-hover-animate="bounce"></div>
+                    <div class="btn-group" role="group" data-bs-hover-animate="bounce"></div>
+                    <h1 class="text-center"></h1>
+                </div>
+                <div class="col-md-12 offset-md-0 offset-lg-0 bounce animated" style="background-size:contain;"><div class="text"><br><div class="pc">
+<p style="font-size:30px"><u><b>Habilidades</b></u></p></div>
+    
+<p style="font-size:28px" align="justify"><b><u><br><br>Técnicas de Guerrilha</u></b><br><br><img src="https://pjgm0202.github.io/Site_Teemo/Teemo_P.png" alt="https://pjgm0202.github.io/Site_Teemo/Teemo_P.png" width="55" height="55" align="justify"></p>
+<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br></i></u></b></p>
+<p style="font-size:17px" align="justify">Se Teemo permanecer imóvel e não realizar qualquer ação por um curto período de tempo, ele fica Invisível por tempo indefinido. Caso esteja em um arbusto, Teemo pode manter sua Invisibilidade enquanto se move. Ao quebrar a Invisibilidade, Teemo ativa o Elemento Surpresa, aumentando a própria Velocidade de Ataque por 3 segundos.<br> 
+<br>
+<video controls="" poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_P1.jpg" width="290" height="200">
   <source src="https://pjgm0202.github.io/Site_Teemo/ability_0017_P1.webm" type="video/webm">
   Formato não suportado  
 </video>
-<br/></p>
-<p style="font-size:28px" align="justify"><b><u>Dardo Ofuscante</u></b><br/><br/><img align="justify" src="https://pjgm0202.github.io/Site_Teemo/BlindingDart.png" alt="https://pjgm0202.github.io/Site_Teemo/BlindingDart.png" height="55" width="55"></p>
-<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br/></i></u></b></p>
-<p style="font-size:17px" align="justify">Custo: 70/75/80/85/90 de Mana<br/>
-Alcance: 680<br/>
-<br/>
-Obscurece a visão de um inimigo com um poderoso veneno, causando dano à unidade alvo e a cegando pela duração do efeito.<br/>
-<br/>
-Causa 80/125/170/215/260 (+80% de Poder de Habilidade) de Dano Mágico e cega o alvo por 1.5/1.75/2/2.25/2.5 segundo(s).<br/>
-<br/>
-<video controls poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_Q1.jpg" height="200" width="290">
+<br></p>
+<p style="font-size:28px" align="justify"><b><u>Dardo Ofuscante</u></b><br><br><img src="https://pjgm0202.github.io/Site_Teemo/BlindingDart.png" alt="https://pjgm0202.github.io/Site_Teemo/BlindingDart.png" width="55" height="55" align="justify"></p>
+<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br></i></u></b></p>
+<p style="font-size:17px" align="justify">Custo: 70/75/80/85/90 de Mana<br>
+Alcance: 680<br>
+<br>
+Obscurece a visão de um inimigo com um poderoso veneno, causando dano à unidade alvo e a cegando pela duração do efeito.<br>
+<br>
+Causa 80/125/170/215/260 (+80% de Poder de Habilidade) de Dano Mágico e cega o alvo por 1.5/1.75/2/2.25/2.5 segundo(s).<br>
+<br>
+<video controls="" poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_Q1.jpg" width="290" height="200">
   <source src="https://pjgm0202.github.io/Site_Teemo/ability_0017_Q1.webm" type="video/webm">
   Formato não suportado  
 </video>
-<br/></p>
-<p style="font-size:28px" align="justify"><b><u>Mover Depressa</u></b><br/><br/><img align="justify" src="https://pjgm0202.github.io/Site_Teemo/MoveQuick.png" alt="https://pjgm0202.github.io/Site_Teemo/MoveQuick.png" height="55" width="55"></p>
-<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br/></i></u></b></p>
-<p style="font-size:17px" align="justify">Custo: 40 de Mana<br/>
-Alcance: 20<br/>
-<br/>
-Teemo corre por aí, aumentando passivamente sua Velocidade de Movimento até que seja atingido por um campeão ou torre inimiga. Ele pode sair em disparada para receber Velocidade de Movimento que não é interrompida ao ser atingido por um certo período de tempo.<br/>
-<br/>
-Passivo: A Velocidade de Movimento de Teemo aumenta em 10/14/18/22/26%, a menos que tenha recebido dano por um campeão ou torre inimiga nos últimos 5 segundos.<br/>
-Ativo: Teemo acelera, recebendo o dobro dos efeitos normais por 3 segundos. Este efeito não é perdido quando atingido.<br/>
-<br/>
-<video controls poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_W1.jpg" height="200" width="290">
+<br></p>
+<p style="font-size:28px" align="justify"><b><u>Mover Depressa</u></b><br><br><img src="https://pjgm0202.github.io/Site_Teemo/MoveQuick.png" alt="https://pjgm0202.github.io/Site_Teemo/MoveQuick.png" width="55" height="55" align="justify"></p>
+<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br></i></u></b></p>
+<p style="font-size:17px" align="justify">Custo: 40 de Mana<br>
+Alcance: 20<br>
+<br>
+Teemo corre por aí, aumentando passivamente sua Velocidade de Movimento até que seja atingido por um campeão ou torre inimiga. Ele pode sair em disparada para receber Velocidade de Movimento que não é interrompida ao ser atingido por um certo período de tempo.<br>
+<br>
+Passivo: A Velocidade de Movimento de Teemo aumenta em 10/14/18/22/26%, a menos que tenha recebido dano por um campeão ou torre inimiga nos últimos 5 segundos.<br>
+Ativo: Teemo acelera, recebendo o dobro dos efeitos normais por 3 segundos. Este efeito não é perdido quando atingido.<br>
+<br>
+<video controls="" poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_W1.jpg" width="290" height="200">
   <source src="https://pjgm0202.github.io/Site_Teemo/ability_0017_W1.webm" type="video/webm">
   Formato não suportado  
 </video>
-<br/></p>
-<p style="font-size:28px" align="justify"><b><u>Tiro Tóxico</u></b><br/><br/><img align="justify" src="https://pjgm0202.github.io/Site_Teemo/ToxicShot.png" alt="https://pjgm0202.github.io/Site_Teemo/ToxicShot.png" height="55" width="55"></p>
-<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br/></i></u></b></p>
-<p style="font-size:17px" align="justify">Custo: Passivo<br/>
-Alcance: 680<br/>
-<br/>
-Cada um dos ataques de Teemo envenenará o alvo, causando dano no impacto e a cada segundo seguinte por 4 segundos.<br/>
-<br/>
-Os ataques básicos de Teemo envenenam seu alvo, causando 10/20/30/40/50 (+30% de Poder de Habilidade) de Dano Mágico ao contato e 6/12/18/24/30 (+10% de Poder de Habilidade) de Dano Mágico a cada segundo por 4 segundos.<br/>
-<br/>
-<video controls poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_E1.jpg" height="200" width="290">
+<br></p>
+<p style="font-size:28px" align="justify"><b><u>Tiro Tóxico</u></b><br><br><img src="https://pjgm0202.github.io/Site_Teemo/ToxicShot.png" alt="https://pjgm0202.github.io/Site_Teemo/ToxicShot.png" width="55" height="55" align="justify"></p>
+<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br></i></u></b></p>
+<p style="font-size:17px" align="justify">Custo: Passivo<br>
+Alcance: 680<br>
+<br>
+Cada um dos ataques de Teemo envenenará o alvo, causando dano no impacto e a cada segundo seguinte por 4 segundos.<br>
+<br>
+Os ataques básicos de Teemo envenenam seu alvo, causando 10/20/30/40/50 (+30% de Poder de Habilidade) de Dano Mágico ao contato e 6/12/18/24/30 (+10% de Poder de Habilidade) de Dano Mágico a cada segundo por 4 segundos.<br>
+<br>
+<video controls="" poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_E1.jpg" width="290" height="200">
   <source src="https://pjgm0202.github.io/Site_Teemo/ability_0017_E1.webm" type="video/webm">
   Formato não suportado  
 </video>
-<br/></p>
-<p style="font-size:28px" align="justify"><b><u>Armadilha Venenosa</u></b><br/><br/><img align="justify" src="https://pjgm0202.github.io/Site_Teemo/TeemoRCast.png" alt="https://pjgm0202.github.io/Site_Teemo/TeemoRCast.png" height="55" width="55"></p>
-<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br/></i></u></b></p>
-<p style="font-size:17px" align="justify">Custo: 75 de Mana<br/>
-Alcance: 400/650/900<br/>
-<br/>
-Teemo arremessa uma armadilha venenosa explosiva usando um dos cogumelos que guardou na mochila. Se um inimigo pisar na armadilha, ela soltará uma nuvem venenosa que causa dano e reduz a velocidade de inimigos ao longo do tempo. Se Teemo arremessar um cogumelo em cima de outro, ele saltará, recebendo alcance adicional.<br/>
-<br/>
-Arremessa um cogumelo como armadilha que detonará caso um inimigo pise nela, espalhando veneno em inimigos próximos que reduz a Velocidade de Movimento em 30/40/50%, os revela e causa 200/325/450 (+50% de Poder de Habilidade) de Dano Mágico ao longo de 4 segundos. As armadilhas têm duração de 5 minutos e levam 1 segundo para armar e ficar invisíveis. Se uma armadilha arremessada cair em cima de outra, ela saltará até 3/4/5 Teemos de distância antes de se fixar. Teemo guarda um cogumelo a cada 60 segundos, mas só pode carregar 3 ao mesmo tempo.<br/>
-<br/>
-<video controls poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_R1.jpg" height="200" width="290">
+<br></p>
+<p style="font-size:28px" align="justify"><b><u>Armadilha Venenosa</u></b><br><br><img src="https://pjgm0202.github.io/Site_Teemo/TeemoRCast.png" alt="https://pjgm0202.github.io/Site_Teemo/TeemoRCast.png" width="55" height="55" align="justify"></p>
+<p style="font-size:20px" align="justify"><b><u><i>Descrição:<br></i></u></b></p>
+<p style="font-size:17px" align="justify">Custo: 75 de Mana<br>
+Alcance: 400/650/900<br>
+<br>
+Teemo arremessa uma armadilha venenosa explosiva usando um dos cogumelos que guardou na mochila. Se um inimigo pisar na armadilha, ela soltará uma nuvem venenosa que causa dano e reduz a velocidade de inimigos ao longo do tempo. Se Teemo arremessar um cogumelo em cima de outro, ele saltará, recebendo alcance adicional.<br>
+<br>
+Arremessa um cogumelo como armadilha que detonará caso um inimigo pise nela, espalhando veneno em inimigos próximos que reduz a Velocidade de Movimento em 30/40/50%, os revela e causa 200/325/450 (+50% de Poder de Habilidade) de Dano Mágico ao longo de 4 segundos. As armadilhas têm duração de 5 minutos e levam 1 segundo para armar e ficar invisíveis. Se uma armadilha arremessada cair em cima de outra, ela saltará até 3/4/5 Teemos de distância antes de se fixar. Teemo guarda um cogumelo a cada 60 segundos, mas só pode carregar 3 ao mesmo tempo.<br>
+<br>
+<video controls="" poster="https://pjgm0202.github.io/Site_Teemo/ability_0017_R1.jpg" width="290" height="200">
   <source src="https://pjgm0202.github.io/Site_Teemo/ability_0017_R1.webm" type="video/webm">
   Formato não suportado  
 </video>
-<br/><br/><br/><br/><br/><br/></p>
-<div class="pt">
-<div class="botao1">
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-<button onclick="javascript: location.href='https://pjgm0202.github.io';"><img height="70" width="70" src= 'https://pjgm0202.github.io/Site_Teemo/setasesquerda.png' style='vertical-align: left; float: left;'/></button><br><br><br><br>
+<br><br>
+    
+    </p><div class="row">
+    <div class="col-md-4 float-left"><button class="btn btn-link active btn-block btn-sm" type="button"></button>
+    <button onclick="javascript: location.href='https://pjgm0202.github.io';" class="btn btn-link active btn-block btn-sm" type="button" data-bs-hover-animate="pulse"><img src="https://pjgm0202.github.io/Site_Teemo/setasesquerda.png" width="70" height="70"></button></div>
+    <div class="col-md-4 float-absolute"><button class="btn btn-link active btn-block btn-sm" type="button"></button>
+    <button onclick="javascript: location.href='https://pjgm0202.github.io/Site2';" class="btn btn-link active btn-block btn-sm" type="button" data-bs-hover-animate="pulse"><img src="https://pjgm0202.github.io/Site_Teemo/titulohistoria.png" width="113" height="77"></button></div>
+    <div class="col-md-4 float-right"><button class="btn btn-link active btn-block btn-sm" type="button"></button>
+    <br><button onclick="scrollWin(0, -10000)" class="btn btn-link active btn-block btn-sm" type="button" data-bs-hover-animate="pulse"><img src="assets/img/top-button.png" width="40" height="40"></button></div>
 </div>
-
-<div class="botao2">
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-<button onclick="javascript: location.href='https://pjgm0202.github.io/Site2';"><image height="77" width="113" src= 'https://pjgm0202.github.io/Site_Teemo/titulohistoria.png' style='vertical-align: left; float: left;'/></button>
-</div>
-
-<div class="botao3">
-<br/>
-<button onclick="scrollWin(0, -10000)"><img height="40" width="40" src= 'https://pjgm0202.github.io/Site_Teemo/top-button.png' style='vertical-align: left; float: left;'/></button><br><br>
+       
 <script>
 function scrollWin(x, y) {
     window.scrollBy(x, y);
 }
 </script>
-</div>
-</div>
-</body>
-</head>
-</html>
+</div></div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+    <div style="width:804px;height:79px;margin:13px;background-repeat:no-repeat;"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
 
+
+</body></html>
